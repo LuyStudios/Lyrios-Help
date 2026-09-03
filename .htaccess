@@ -1,0 +1,4 @@
+# Impede a execução de PHP dentro da pasta de uploads (protege contra upload de scripts maliciosos)
+<FilesMatch "\.(php|phtml|php3|php4|php5|php7|pl|py|jsp|asp|sh|cgi)$">
+    Require all denied
+</FilesMatch>
